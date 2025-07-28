@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aaaaaa1a;
+}
+.contanier {
+  width: 80%;
+  height: 80%;
+  border-radius: 15px;
+  background-color: white;
+  max-width: 1200px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding-top: 5%;
+  padding-right: 5%;
+  margin: auto;
+  padding: 20px 0;
+  height: 10%;
+}
+.logo {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(19, 47, 90);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  height: 90%;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 6px;
+  list-style-type: none;
+}
+nav ul li a {
+  padding: 10px 5px;
+  color: #333;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  transition: all 0.5s ease;
+}
+nav ul li a:hover {
+  border: 2px soild red;
+  background-color: rgb(14, 63, 136);
+  border-radius: 5px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}
+.text {
+  display: inline-block;
+  list-style-type: none;
+}
+h1 {
+  font-size: 40px;
+  color: rgb(19, 47, 90);
+}
+p {
+  color: rgb(19, 47, 90);
+  font-size: 18px;
+}
+.zezzo {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zoz {
+  width: 40%;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  gap: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.zoz i {
+  position: absolute;
+  left: 886px;
+  top: 346px;
+  transform: translate(-50%);
+  color: rgb(134, 139, 143);
+}
+.input-box {
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.6); /* شفافية الخلفية */
+  backdrop-filter: blur(3px); /* ضبابية خلف النص لو الخلفية فيها صورة */
+  font-size: 15px;
+  color: #333;
+  outline: none;
+  transition: 0.3s;
+  width: 60%;
+  margin-right: 2px;
+}
+
+.input-box::placeholder {
+  color: #888;
+}
+
+.input-box:focus {
+  border-color: #3b82f6; /* لون عند الضغط */
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns i {
+  position: absolute;
+  left: 760px;
+  top: 437px;
+  transform: translate(-50%);
+  color: rgb(255, 255, 255);
+}
+/* From Uiverse.io by adamgiebl */
+/* From Uiverse.io by adamgiebl */
+button {
+  color: #ffffff;
+  padding: 10px 200px;
+  font-size: 20px;
+  border-radius: 0.5em;
+  background: rgb(19, 47, 90);
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+button:hover {
+  border: 3px solid rgb(46, 45, 45);
+  color: #c5c5c5;
+}
+
+button:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+@media (max-width: 950px) {
+  .contanier,
+  nav {
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.1s;
+  }
+
+  nav ul li a:hover {
+    border: 2px soild red;
+    padding: 1px 1px 1px 1px;
+    background-color: rgb(14, 63, 136);
+    border-radius: 5px;
+  }
+  .zoz {
+    width: 85%;
+    padding: 25px;
+    gap: 10px;
+  }
+  .zoz i {
+    width: 100%;
+    left: 645px;
+    top: 325px;
+    position: absolute;
+    transform: translate(-50%);
+  }
+  button {
+    padding: 15px 150px;
+    font-size: 20px;
+  }
+  .btns {
+    width: 100%;
+  }
+  .btns i {
+    width: 100%;
+    position: absolute;
+    left: 550px;
+    top: 416px;
+    transform: translate(-50%);
+    color: rgb(255, 255, 255);
+  }
+}
