@@ -156,7 +156,7 @@ button:hover {
 button:active {
   box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
 }
-@media (max-width: 950px) {
+@media (min-width: 950px) and (max-width: 1150px)  {
   .contanier,
   nav {
     width: 90%;
